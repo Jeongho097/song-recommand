@@ -1,6 +1,7 @@
 # song-recommand
 
 # 1. 불용어 데이터 크롤링
+  - 다른 유저들이 한국어 불용어를 정리해 놓은 데이터를 크롤링함.
 
 # 2. mecab을 통한 전처리
   - 데이터는 카카오 아레나의 Melon Playlist Continuation 데이터를 사용
