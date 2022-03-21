@@ -19,6 +19,13 @@
 - 여기서 중요한 것은 사용자는 본인이 원하는 노래와 관련된 단어/문장을 입력해 노래를 추천받을 수 있다.
 상황, 분위기, 가수, 장르 (예시 : 카페에서 공부하면서 듣기 좋은 노래 / sg워너비 노래 / 빅뱅, 2PM, 소녀시대 / 디즈니 영화 ost 등) 다양한 입력을 받고 입력받은 값과 문장을 가진 플레이리스트를 찾아내 해당 플레이리스트에서 노래를 추천받을 수 있다.
 
+3. HNSW - Fast Approximate Nearest Neighbor Search
+- 추천 시스템이나 NLP에서는 Vector의 최근접을 찾는 방식이 필요
+- sklearn의 KNN의 경우 높은 정확도를 보이나 데이터 크기에 비례해 많은 시간이 소요
+- 따라서 시간이 적게 들고 KNN과 같이 높은 정확도를 보이는 ANN알고리즘 HNSW사용
+![속도 비교(참고 : https://ichi.pro/ko/knn-k-nearest-neighbors-i-jug-eossseubnida-17323298122558)](https://ichi.pro/assets/images/max/724/1*Y879CpkO8S6L-vo_PbqutA.png)
+![정확도(참고 : https://ichi.pro/ko/knn-k-nearest-neighbors-i-jug-eossseubnida-17323298122558)](https://ichi.pro/assets/images/max/724/1*5ZBt0ITNNOXD-HD4Rxs0bg.png)
+
 # 1. 불용어 데이터 크롤링
   - 다른 유저들이 한국어 불용어를 정리해 놓은 데이터를 크롤링함.
 
@@ -26,11 +33,11 @@
   - 데이터는 카카오 아레나의 Melon Playlist Continuation 데이터를 사용
 
 # 3_1. Word2Vec를 통한 word embedding
-  - word embedding을 진행한 후 hnswlib knn을 유사도 계산
+  - word embedding을 진행한 후 hnswlib knn를 통해 유사도 계산
 
 # 3_2. Sent2Vec를 통한 word embedding
-  - word embedding을 진행한 후 hnswlib knn을 유사도 계산
-  - sent2vec의 경우 unbuntu 서버를 이용해서 편하게 다운 사용이 가능함
+  - word embedding을 진행한 후 hnswlib knn를 통해 유사도 계산
+  - sent2vec의 경우 ubuntu 서버를 이용해서 편하게 다운 사용이 가능함
 
 # 4_1. Word2Vec 기반 노래 추천
   - 추천을 받고 싶은 상황이나 가수 등을 문장으로 입력하면 해당 문장과 가장 유사하다고 생각되는 노래들을 word2vec 기반으로 노래를 추천한다
