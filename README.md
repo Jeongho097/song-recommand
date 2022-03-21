@@ -25,6 +25,9 @@
 - 따라서 시간이 적게 들고 KNN과 같이 높은 정확도를 보이는 ANN알고리즘 HNSW사용
 ![속도 비교(참고 : https://ichi.pro/ko/knn-k-nearest-neighbors-i-jug-eossseubnida-17323298122558)](https://ichi.pro/assets/images/max/724/1*Y879CpkO8S6L-vo_PbqutA.png)
 ![정확도(참고 : https://ichi.pro/ko/knn-k-nearest-neighbors-i-jug-eossseubnida-17323298122558)](https://ichi.pro/assets/images/max/724/1*5ZBt0ITNNOXD-HD4Rxs0bg.png)
+![속도 비교(참고 : https://ichi.pro/ko/knn-k-nearest-neighbors-i-jug-eossseubnida-17323298122558)]<img width="531" alt="KakaoTalk_20220321_165055392" src="https://user-images.githubusercontent.com/89580953/159222009-b4777f5c-5876-4644-943e-dec3201c78ec.png">
+
+
 
 # 1. 불용어 데이터 크롤링
   - 다른 유저들이 한국어 불용어를 정리해 놓은 데이터를 크롤링함.
