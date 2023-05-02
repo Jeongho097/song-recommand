@@ -19,7 +19,7 @@
 - 여기서 중요한 것은 사용자는 본인이 원하는 노래와 관련된 단어/문장을 입력해 노래를 추천받을 수 있다.
 상황, 분위기, 가수, 장르 (예시 : 카페에서 공부하면서 듣기 좋은 노래 / sg워너비 노래 / 빅뱅, 2PM, 소녀시대 / 디즈니 영화 ost 등) 다양한 입력을 받고 입력받은 값과 문장을 가진 플레이리스트를 찾아내 해당 플레이리스트에서 노래를 추천받을 수 있다.
 
-3. HNSW - Fast Approximate Nearest Neighbor Search
+3. HNSW - Hierarchical Navigable Small World
 - 추천 시스템이나 NLP에서는 Vector의 최근접을 찾는 방식이 필요
 - sklearn의 KNN의 경우 높은 정확도를 보이나 데이터 크기에 비례해 많은 시간이 소요
 - 따라서 시간이 적게 들고 KNN과 같이 높은 정확도를 보이는 ANN알고리즘 HNSW사용
