@@ -1,7 +1,11 @@
 # song-recommand
 
 * 비즈니스 인사이트 도출을 위한 데이터 분석 프로젝트 과정(메디치교육센터)
-  - 최종 프로젝트로 진행한 추천시스템
+  - 음악 추천 서비스 및 데모 페이지 구축
+  	- 앨범 사진 크롤링
+  	- mecap을 이용한 전처리
+  	- word2vec와 sent2vec 결과 비교
+  	- hnsw을 이용한 유사도 
 
 # 
 카카오 아레나 대회의 멜론 플레이리스트 데이터, song_meta 데이터를 이용해 추천 시스템을 구축함.
@@ -22,7 +26,7 @@
 3. HNSW - Hierarchical Navigable Small World
 - 추천 시스템이나 NLP에서는 Vector의 최근접을 찾는 방식이 필요
 - sklearn의 KNN의 경우 높은 정확도를 보이나 데이터 크기에 비례해 많은 시간이 소요
-- 따라서 시간이 적게 들고 KNN과 같이 높은 정확도를 보이는 ANN알고리즘 HNSW사용
+- 따라서 시간이 적게 들고 KNN과 같이 높은 정확도를 보이는 HNSW사용
 
 <img width="531" alt="KakaoTalk_20220321_165055392" src="https://user-images.githubusercontent.com/89580953/159222009-b4777f5c-5876-4644-943e-dec3201c78ec.png">
 속도 비교(참고 : https://ichi.pro/ko/knn-k-nearest-neighbors-i-jug-eossseubnida-17323298122558)
